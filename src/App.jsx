@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import {Div} from "./AppCss";
-import routes from "@/router/router.js" 
-import {BrowserRouter,Route,Router,useRoutes} from "react-router-dom"
+import routes from "@/router/router.jsx" 
+import {BrowserRouter,Link,Route,Router,useRoutes} from "react-router-dom"
 
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
   return (
        
          <Div>
+          <Link to="/login">login</Link>
               {element}
          </Div>
        
