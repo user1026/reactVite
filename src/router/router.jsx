@@ -1,5 +1,6 @@
-import Index from "@/view/baseHtml/index/index.jsx";
+import Index from "@/view/baseHtml/index/index.jsx"
 import Login from "@/view/baseHtml/login/login.jsx";
+import Error from "@/view/baseHtml/error/error.jsx";
 
 const routes = [
     {
@@ -7,10 +8,11 @@ const routes = [
         element: <Login />,
     },
     {
-        path: "/index",
-        element: <Index />,
+        path:"/",
+        element:<Index />
     },
-    { path: "*", element: <Index /> },
+    {path:'/error',element:<Error/>},
+    { path: "*", element: <Index />,},
 ];
 
 export default routes;
